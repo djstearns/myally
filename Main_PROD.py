@@ -1,8 +1,3 @@
-#!/usr/bin/python3.8
-#pip install ratelimit
-#pip install statsmodels
-
-#7 PM is python anywhere's midnight CST DST
 ### #!/usr/bin/python3.8
 
 #!/home/djstearns/.virtualenvs/allyenv/bin/python
@@ -12,6 +7,8 @@ import json
 import pandas as pd
 from ratelimit import limits, sleep_and_retry
 import datetime
+import numpy as np
+from requests_oauthlib import OAuth1Session
 
 import config as cfg
 
